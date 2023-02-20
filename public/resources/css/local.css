@@ -1,0 +1,31 @@
+body:before {
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:0.8;
+    background:
+            url('data:image/svg+xml;utf8,<svg style="transform:rotate(45deg)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 60"><text x="0" y="25" fill="%23000">LOCAL</text></svg>')
+            0 0/60px 60px;
+}
+
+body {
+    position:relative;
+    background:green;
+    min-height:200vh;
+}
+
+.bgtext {
+    position: relative;
+}
+
+.bgtext:before {
+    margin: 3rem;
+    content: "Background text";
+    position: absolute;
+    transform: rotate(300deg);
+    -webkit-transform: rotate(300deg);
+    color: rgb(187, 182, 182);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

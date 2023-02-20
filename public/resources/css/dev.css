@@ -1,0 +1,15 @@
+body:before {
+    content:"";
+    position:absolute;
+    inset:0;
+    opacity:0.8;
+    background:
+            url('data:image/svg+xml;utf8,<svg style="transform:rotate(45deg)" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 60"><text x="0" y="25" fill="%23000">DEV</text></svg>')
+            0 0/60px 60px;
+}
+
+body {
+    position:relative;
+    background:darkcyan;
+    min-height:200vh;
+}
